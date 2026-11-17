@@ -4,6 +4,13 @@
       
   </head>
   <body>
-<p>Start-Process -FilePath "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"</p>
+<p>
+  function New-Popup { <br>
+    param ($Text = "", $Title = "", $button = "OK", $Icon = "None") <br>
+    Add-Type -AssemblyName PresentationFramework <br>
+    [System.Windows.MessageBox]::Show($Text, $Title, $Button, $Icon) <br>
+} <br>
+  New-Popup -Text "HI" -Title "message" -Icon Information <br>
+</p>
   </body>
 </html>
