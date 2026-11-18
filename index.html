@@ -4,6 +4,12 @@
       
   </head>
   <body>
-<p>Start 'https://docs.google.com/document/d/1vn-ss0SYSha5q5cf1chWzkzLT3UsTHML-OVLqzu6X5s/edit?tab=t.0'</p>
+<p>function New-Popup { <br>
+    param ($Text = '', $Title = '', $button = 'OK', $Icon = 'None') <br>
+    Add-Type -AssemblyName PresentationFramework <br>
+    [System.Windows.MessageBox]::Show($Text, $Title, $Button, $Icon) <br>
+} <br>
+New-Popup -Text 'Yo wsg jan?' <br>
+</p>
   </body>
 </html>
