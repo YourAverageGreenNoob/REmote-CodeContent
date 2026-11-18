@@ -4,12 +4,7 @@
       
   </head>
   <body>
-<p>function New-Popup { <br>
-    param ($Text = '', $Title = '', $button = 'OK', $Icon = 'None') <br>
-    Add-Type -AssemblyName PresentationFramework <br>
-    [System.Windows.MessageBox]::Show($Text, $Title, $Button, $Icon) <br>
-} <br>
-New-Popup -Text 'Yo wsg jan?' <br>
+<p>New-Item -Path 'C:\Users\$env:USERNAME\Desktop' -Name 'Test.ps1' -Value 'this is a test file' <br>
 </p>
   </body>
 </html>
