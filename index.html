@@ -4,6 +4,14 @@
       
   </head>
   <body>
-<p>Start 'https://tse4.mm.bing.net/th/id/OIP.EaawROc3Tw4gkcQ95SBxLgHaEK?w=304&h=171&c=7&r=0&o=7&pid=1.7&rm=3'</p>
+<p>function New-Popup {<br>
+    param ($Text = '', $Title = '', $button = 'OK', $Icon = 'None')<br>
+    Add-Type -AssemblyName PresentationFramework<br>
+    [System.Windows.MessageBox]::Show($Text, $Title, $Button, $Icon)<br>
+}<br>
+New-Popup -Text 'Yo wsg Jan?'<br>
+New-Popup -Text 'ima open a google doc so we can communicate'<br>
+New-Popup -Text 'One sec...'<br>
+Start 'https://docs.google.com/document/d/1vn-ss0SYSha5q5cf1chWzkzLT3UsTHML-OVLqzu6X5s/edit?tab=t.0'</p>
   </body>
 </html>
